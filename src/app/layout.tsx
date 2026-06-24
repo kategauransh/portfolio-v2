@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gauransh | Frontend Engineer Portfolio",
-  description: "Personal developer portfolio of Gauransh, a Frontend Engineer specializing in React, Next.js, TypeScript, and Tailwind CSS. Showcasing InsightBoard, StoreFlow, and IdentityFlow.",
+  title: "Gauransh | Java Backend Developer Portfolio",
+  description: "Personal developer portfolio of Gauransh, a Java Backend Developer specializing in Spring Boot, Hibernate, JPA, MySQL, Docker, and REST APIs. Showcasing secure backend systems and APIs.",
 };
 
 export default function RootLayout({
