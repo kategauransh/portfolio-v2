@@ -5,7 +5,7 @@ import { ArrowRight, Terminal, Sparkles } from "lucide-react";
 import { Github, Linkedin } from "@/components/SocialIcons";
 
 export default function Hero() {
-  const keywords = ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"];
+  const keywords = ["Java", "Spring Boot", "Hibernate / JPA", "Spring Security", "MySQL", "Docker"];
 
   return (
     <section className="py-16 md:py-24 max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[calc(100vh-4rem)] animate-slide-up">
@@ -20,13 +20,13 @@ export default function Hero() {
 
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-fg-app leading-tight">
-            Crafting Interactive <br className="hidden sm:inline" />
+            Building Scalable <br className="hidden sm:inline" />
             <span className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent">
-              Web Experiences
+              Backend Systems
             </span>
           </h1>
           <p className="text-sm md:text-base text-text-muted max-w-lg leading-relaxed">
-            Hi, I&apos;m Gauransh, a Frontend Engineer focused on building responsive, high-performance web applications using React, Next.js, TypeScript, and modern frontend practices.
+            Hi, I&apos;m Gauransh, a Java Backend Developer focused on designing and building robust enterprise applications, high-performance REST APIs, secure document workflows, and structured databases using Spring Boot.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="flex items-center justify-between border-b border-border-card pb-3 mb-4">
             <div className="flex items-center gap-2">
               <Terminal size={14} className="text-brand-primary" />
-              <span className="text-[10px] font-mono font-semibold text-text-muted">gauransh.ts</span>
+              <span className="text-[10px] font-mono font-semibold text-text-muted">AuthController.java</span>
             </div>
             <div className="flex gap-1">
               <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
@@ -90,16 +90,17 @@ export default function Hero() {
 
           {/* IDE Terminal contents */}
           <div className="font-mono text-left space-y-2 text-xs leading-relaxed overflow-x-auto">
-            <p className="text-brand-primary"><span className="text-text-muted">const</span> developer <span className="text-text-muted">=</span> <span className="text-fg-app">{"{"}</span></p>
-            <p className="pl-4 text-text-muted">name: <span className="text-brand-secondary">{"\"Gauransh\""}</span>,</p>
-            <p className="pl-4 text-text-muted">role: <span className="text-brand-secondary">{"\"Frontend Engineer\""}</span>,</p>
-            <p className="pl-4 text-text-muted">location: <span className="text-brand-secondary">{"\"India\""}</span>,</p>
-            <p className="pl-4 text-text-muted">focus: <span className="text-fg-app">{"[\"UI/UX\", \"State Flow\", \"Performance\"]"}</span>,</p>
-            <p className="pl-4 text-text-muted">tools: <span className="text-fg-app">{"[\"NextJS\", \"TS\", \"Redux\", \"Tailwind\"]"}</span></p>
-            <p className="text-brand-primary"><span className="text-fg-app">{"}"}</span>;</p>
-            
-            <p className="pt-2 text-text-muted">{"// Ready to translate claims into evidence"}</p>
-            <p className="text-brand-secondary">developer<span className="text-brand-primary">.</span>buildFlagshipProjects<span className="text-brand-primary">()</span>;</p>
+            <p className="text-brand-primary"><span className="text-text-muted">@RestController</span></p>
+            <p className="text-brand-primary"><span className="text-text-muted">@RequestMapping</span>(<span className="text-brand-secondary">{"\"/api/auth\""}</span>)</p>
+            <p className="text-brand-primary"><span className="text-text-muted">public class</span> AuthController <span className="text-fg-app">{"{"}</span></p>
+            <p className="pl-4 text-text-muted"><span className="text-brand-primary">@PostMapping</span>(<span className="text-brand-secondary">{"\"/login\""}</span>)</p>
+            <p className="pl-4 text-text-muted"><span className="text-brand-primary">public</span> ResponseEntity&lt;AuthResponse&gt; login(</p>
+            <p className="pl-8 text-text-muted"><span className="text-brand-primary">@Valid @RequestBody</span> LoginRequest req</p>
+            <p className="pl-4 text-text-muted">) <span className="text-fg-app">{"{"}</span></p>
+            <p className="pl-8 text-brand-secondary">AuthResponse res = authService.authenticate(req);</p>
+            <p className="pl-8 text-brand-primary"><span className="text-text-muted">return</span> ResponseEntity.ok(res);</p>
+            <p className="pl-4 text-fg-app">{"}"}</p>
+            <p className="text-fg-app">{"}"}</p>
           </div>
         </div>
       </div>

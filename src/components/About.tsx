@@ -5,8 +5,8 @@ import { User, Award, ShieldCheck } from "lucide-react";
 
 export default function About() {
   const metrics = [
-    { value: "3+", label: "Flagship Projects Built", icon: Award },
-    { value: "100%", label: "Responsive Core Designs", icon: ShieldCheck },
+    { value: "3+", label: "Flagship Backend Systems", icon: Award },
+    { value: "100%", label: "Layered API Architecture", icon: ShieldCheck },
     { value: "Naresh i", label: "Certified Professional Training", icon: User },
   ];
 
@@ -24,13 +24,13 @@ export default function About() {
         {/* Left Column: Biography */}
         <div className="lg:col-span-7 space-y-4 text-left leading-relaxed text-sm md:text-base text-text-muted">
           <p>
-            I am a dedicated **Frontend Engineer** who loves transforming design ideas and data structures into responsive, highly interactive web applications. My coding principles focus on clean architecture, performance, accessibility, and robust state management flows.
+            I am a dedicated **Java Backend Developer** who loves designing and building robust, scalable server-side applications, secure document workflows, and structured REST APIs. My coding principles focus on Controller-Service-Repository layered architectures, exception handling, data validation, and clean database schema designs.
           </p>
           <p>
-            During my intensive training at **Naresh i Technologies**, I gained deep experience scaffolding modular component architectures, integrating REST APIs, implementing JWT-based secure routes, and deploying scalable sites to cloud hosts like Vercel.
+            During my intensive training at **Naresh i Technologies**, I gained deep experience scaffolding Spring Boot microservices, integrating Spring Security and JWT for role-based authorization, using Hibernate/JPA for relational persistence, and containerizing backends using Docker.
           </p>
           <p>
-            When I build applications, I design SVGs directly to avoid version-mismatch packages, use type safety to catch compile-time errors early, and write custom transition classes for smooth scrolling and animations.
+            When I build backend systems, I document API contracts clearly using OpenAPI/Swagger, write efficient JPA queries to avoid performance bottlenecks, use in-memory H2 databases for rapid integration testing, and containerize service environments for cloud compatibility.
           </p>
         </div>
 

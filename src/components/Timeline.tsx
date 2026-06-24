@@ -11,28 +11,28 @@ export default function Timeline() {
       date: "2021 - 2025",
       icon: GraduationCap,
       details: [
-        "Specialized in software development, data structures, algorithms, and web concepts.",
-        "Graduated with a cumulative GPA score of 7.2/10."
+        "Specialized in software engineering, data structures, algorithms, and computer systems.",
+        "Graduated with a cumulative GPA score of 6.91/10."
       ]
     },
     {
-      title: "Full Stack Frontend Development Program",
+      title: "Java Full Stack Development Program",
       subtitle: "Naresh i Technologies",
       date: "Professional Training",
       icon: Briefcase,
       details: [
-        "Rigorous training in React.js, Next.js, TypeScript, JavaScript ES6+, and Tailwind CSS.",
-        "Built modular component interfaces, REST API integration client scripts, and JWT route handling.",
-        "Exercised Git version controls, GitHub collaboration repositories, and Vercel hosting pipelines."
+        "Completed hands-on training in Core Java, Advanced Java, Spring Boot, Hibernate, JPA, REST APIs, and MySQL.",
+        "Built project-based applications with layered architecture, request validation, exception handling, and API testing.",
+        "Practiced backend development workflows using Git, GitHub, Maven, Postman, and Docker fundamentals."
       ]
     },
     {
-      title: "Full Stack Frontend Development Certification",
+      title: "Java Full Stack Development Certification",
       subtitle: "Naresh i Technologies",
       date: "Credential Milestone",
       icon: Award,
       details: [
-        "Earned formal certification validating competencies in modern SPA client-side architectures, Redux Toolkit state stores, and deployment workflows."
+        "Earned formal certification validating competencies in enterprise Java application development, relational persistence, Spring security, and deployment pipelines."
       ]
     }
   ];

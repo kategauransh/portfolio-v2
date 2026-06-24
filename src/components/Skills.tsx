@@ -4,60 +4,60 @@ import React, { useState } from "react";
 import { Laptop, Database, Globe, Lock, Wrench } from "lucide-react";
 
 export default function Skills() {
-  const [activeCategory, setActiveCategory] = useState("frontend");
+  const [activeCategory, setActiveCategory] = useState("backend");
 
   const skillGroups = [
     {
-      id: "frontend",
-      label: "Frontend Dev",
+      id: "backend",
+      label: "Spring Backend",
       icon: Laptop,
       items: [
-        { name: "React.js", level: 95 },
-        { name: "Next.js", level: 90 },
-        { name: "TypeScript", level: 88 },
-        { name: "JavaScript ES6+", level: 92 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "CSS3 / HTML5", level: 90 },
+        { name: "Spring Boot", level: 95 },
+        { name: "Spring MVC", level: 90 },
+        { name: "Hibernate / JPA", level: 92 },
+        { name: "Spring Data JPA", level: 92 },
       ]
     },
     {
-      id: "state",
-      label: "State Store",
+      id: "languages",
+      label: "Core Languages",
       icon: Database,
       items: [
-        { name: "Redux Toolkit", level: 90 },
-        { name: "Context API", level: 95 },
+        { name: "Java (Core & OOP)", level: 95 },
+        { name: "SQL Querying", level: 90 },
+        { name: "Java 8 Streams", level: 88 },
+        { name: "Multithreading", level: 85 },
       ]
     },
     {
       id: "api",
-      label: "API Integrations",
+      label: "REST APIs & Doc",
       icon: Globe,
       items: [
-        { name: "REST APIs", level: 92 },
-        { name: "Axios client", level: 90 },
-        { name: "Fetch API", level: 88 },
+        { name: "RESTful Web Services", level: 95 },
+        { name: "OpenAPI / Swagger", level: 90 },
+        { name: "Postman Client", level: 92 },
       ]
     },
     {
-      id: "auth",
-      label: "Security",
+      id: "security",
+      label: "Auth & Security",
       icon: Lock,
       items: [
-        { name: "JWT Authentication", level: 88 },
-        { name: "Protected Routes", level: 92 },
-        { name: "Session Persistence", level: 90 },
+        { name: "Spring Security", level: 88 },
+        { name: "JWT Token Auth", level: 90 },
+        { name: "BCrypt Encryption", level: 92 },
       ]
     },
     {
       id: "tools",
-      label: "Dev Tools",
+      label: "DevOps & Databases",
       icon: Wrench,
       items: [
-        { name: "Git / GitHub", level: 90 },
-        { name: "Vercel hosting", level: 88 },
-        { name: "Postman API client", level: 92 },
-        { name: "Figma UI tool", level: 80 },
+        { name: "Docker & Compose", level: 88 },
+        { name: "Git & GitHub Versioning", level: 92 },
+        { name: "MySQL / PostgreSQL", level: 92 },
+        { name: "Maven Build Tool", level: 90 },
       ]
     }
   ];

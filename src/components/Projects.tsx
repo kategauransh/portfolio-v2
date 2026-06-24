@@ -7,56 +7,44 @@ import { Github } from "@/components/SocialIcons";
 export default function Projects() {
   const projectsList = [
     {
-      title: "InsightBoard -- Analytics Dashboard",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "SVG Charts"],
+      title: "Reading – Xerox Printing & Delivery Platform",
+      tech: ["Spring Boot", "MySQL", "JPA / Hibernate", "Docker", "PostgreSQL", "REST APIs"],
       description: [
-        "Built a responsive analytics platform for visualizing business metrics and user activity.",
-        "Integrated REST APIs and implemented loading, error, and state management workflows.",
-        "Developed reusable UI components following modern frontend architecture best practices."
+        "Built a document printing and delivery platform where users upload PDFs, configure print options, and place orders online.",
+        "Developed REST APIs for order management, pricing calculation, and document processing using Spring Boot and PostgreSQL.",
+        "Designed the backend using Controller–Service–Repository architecture and containerized the application with Docker."
       ],
-      github: "https://github.com/kategauransh/insightboard",
-      live: "https://kategauransh.github.io/insightboard/",
-      icon: "📊"
+      github: "https://github.com/kategauransh/Red_Ink",
+      live: "",
+      icon: "🖨️"
     },
     {
-      title: "StoreFlow -- E-Commerce Frontend",
-      tech: ["React.js", "Redux Toolkit", "TypeScript", "Tailwind CSS"],
+      title: "AI Transcriber – Speech-to-Text Platform",
+      tech: ["Spring Boot", "Spring AI", "MySQL", "Swagger / OpenAPI", "REST APIs"],
       description: [
-        "Developed product catalog, shopping cart, and checkout workflows for an online store.",
-        "Implemented centralized state management using Redux Toolkit.",
-        "Integrated backend APIs for products, orders, and authentication."
+        "Developed backend services for audio transcription workflows using Spring Boot and REST APIs.",
+        "Documented API contracts using Swagger/OpenAPI and implemented centralized exception handling.",
+        "Integrated backend workflows for transcript generation, retrieval, and structured response handling."
       ],
-      github: "https://github.com/kategauransh/storeflow",
-      live: "https://kategauransh.github.io/storeflow/",
-      icon: "🛒"
+      github: "https://github.com/kategauransh/Springboot-AI_powerded_Transcriber",
+      live: "",
+      icon: "🎙️"
     },
     {
-      title: "Portfolio V2 -- Personal Portfolio",
-      tech: ["Next.js", "Tailwind CSS", "TypeScript", "Intersection Observer"],
+      title: "JWT Authentication System",
+      tech: ["Spring Boot", "Spring Security", "JWT", "MySQL", "BCrypt", "Hibernate", "Spring Data JPA"],
       description: [
-        "Developed a modern portfolio website with reusable component architecture.",
-        "Implemented smooth animations and optimized responsiveness across devices.",
-        "Deployed on GitHub Pages with SEO-friendly structure and performance optimizations."
+        "Implemented authentication and authorization using Spring Security, JWT, and BCrypt password encryption.",
+        "Secured protected REST endpoints with token validation and role-based access control.",
+        "Designed persistence using Hibernate and Spring Data JPA for user and role management."
       ],
-      github: "https://github.com/kategauransh/portfolio-v2",
-      live: "https://kategauransh.github.io/portfolio-v2/",
-      icon: "✨"
-    },
-    {
-      title: "IdentityFlow -- Authentication UI",
-      tech: ["React.js", "JWT Authentication", "CSS Modules"],
-      description: [
-        "Built login, registration, and protected-route workflows.",
-        "Integrated JWT authentication APIs and session persistence.",
-        "Implemented authorization-aware navigation and secure route handling."
-      ],
-      github: "https://github.com/kategauransh/identityflow",
-      live: "https://kategauransh.github.io/identityflow/",
+      github: "https://github.com/kategauransh/JWT-Authentication-System",
+      live: "",
       icon: "🔐"
     },
     {
       title: "E-Commerce Microservices Backend",
-      tech: ["Java", "Spring Boot", "Eureka Discovery", "RabbitMQ", "Zipkin"],
+      tech: ["Java", "Spring Boot", "Eureka Discovery", "RabbitMQ", "Zipkin", "Microservices"],
       description: [
         "Architected and developed scalable microservices (Product, Order, Payment) using Spring Boot.",
         "Implemented service discovery with Eureka, load balancing, and distributed tracing with Zipkin.",
@@ -77,30 +65,6 @@ export default function Projects() {
       github: "https://github.com/kategauransh/Brew-Beans",
       live: "https://brew-beans-hazel.vercel.app",
       icon: "☕"
-    },
-    {
-      title: "BookTown -- Online Bookstore Layout",
-      tech: ["HTML", "CSS", "JavaScript"],
-      description: [
-        "Developed an online bookstore landing page displaying custom grids and hover listings.",
-        "Focused on semantic HTML and responsive typography for a clean user interface.",
-        "Implemented interactive search and filter UI mock workflows locally."
-      ],
-      github: "https://github.com/kategauransh/BookTown-",
-      live: "",
-      icon: "📚"
-    },
-    {
-      title: "Cold Email Automation Tool",
-      tech: ["JavaScript", "Node.js", "SMTP Protocol", "File Parser"],
-      description: [
-        "Created a command-line script in JavaScript to automate personalized cold email marketing campaigns.",
-        "Parsed contact lists dynamically and integrated secure SMTP mailing client protocols.",
-        "Configured tracking of sent logs and basic template variable substitutions."
-      ],
-      github: "https://github.com/kategauransh/Cold-Email-Automation",
-      live: "",
-      icon: "📧"
     },
     {
       title: "Data Structures & Algorithms in Java",
