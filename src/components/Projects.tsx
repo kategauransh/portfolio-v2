@@ -36,7 +36,7 @@ export default function Projects() {
       description: [
         "Developed a modern portfolio website with reusable component architecture.",
         "Implemented smooth animations and optimized responsiveness across devices.",
-        "Deployed on Vercel with SEO-friendly structure and performance optimizations."
+        "Deployed on GitHub Pages with SEO-friendly structure and performance optimizations."
       ],
       github: "https://github.com/kategauransh/portfolio-v2",
       live: "https://kategauransh.github.io/portfolio-v2/",
@@ -53,6 +53,66 @@ export default function Projects() {
       github: "https://github.com/kategauransh/identityflow",
       live: "https://kategauransh.github.io/identityflow/",
       icon: "🔐"
+    },
+    {
+      title: "E-Commerce Microservices Backend",
+      tech: ["Java", "Spring Boot", "Eureka Discovery", "RabbitMQ", "Zipkin"],
+      description: [
+        "Architected and developed scalable microservices (Product, Order, Payment) using Spring Boot.",
+        "Implemented service discovery with Eureka, load balancing, and distributed tracing with Zipkin.",
+        "Integrated RabbitMQ for asynchronous order processing and robust inter-service communication."
+      ],
+      github: "https://github.com/kategauransh/E-Commerce-Microservices",
+      live: "",
+      icon: "⚙️"
+    },
+    {
+      title: "Brew Beans -- Coffee Shop Landing Page",
+      tech: ["HTML", "CSS", "JavaScript", "Vercel"],
+      description: [
+        "Designed a beautiful, fully responsive website for a coffee shop client.",
+        "Implemented high-end CSS layouts, modern custom navigation menus, and animations.",
+        "Deployed live to Vercel for high performance and smooth page transitions."
+      ],
+      github: "https://github.com/kategauransh/Brew-Beans",
+      live: "https://brew-beans-hazel.vercel.app",
+      icon: "☕"
+    },
+    {
+      title: "BookTown -- Online Bookstore Layout",
+      tech: ["HTML", "CSS", "JavaScript"],
+      description: [
+        "Developed an online bookstore landing page displaying custom grids and hover listings.",
+        "Focused on semantic HTML and responsive typography for a clean user interface.",
+        "Implemented interactive search and filter UI mock workflows locally."
+      ],
+      github: "https://github.com/kategauransh/BookTown-",
+      live: "",
+      icon: "📚"
+    },
+    {
+      title: "Cold Email Automation Tool",
+      tech: ["JavaScript", "Node.js", "SMTP Protocol", "File Parser"],
+      description: [
+        "Created a command-line script in JavaScript to automate personalized cold email marketing campaigns.",
+        "Parsed contact lists dynamically and integrated secure SMTP mailing client protocols.",
+        "Configured tracking of sent logs and basic template variable substitutions."
+      ],
+      github: "https://github.com/kategauransh/Cold-Email-Automation",
+      live: "",
+      icon: "📧"
+    },
+    {
+      title: "Data Structures & Algorithms in Java",
+      tech: ["Java", "Algorithms", "Data Structures"],
+      description: [
+        "Coded standard data structures (trees, graphs, lists) and common algorithms in Java.",
+        "Optimized algorithmic runtime complexities using dynamic programming principles.",
+        "Built modular, reusable class structures to test sorting and traversal solutions."
+      ],
+      github: "https://github.com/kategauransh/DSA_codes",
+      live: "",
+      icon: "🧩"
     }
   ];
 
