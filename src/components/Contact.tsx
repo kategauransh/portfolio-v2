@@ -65,8 +65,8 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] text-text-muted uppercase">Email</span>
-                <a href="mailto:yourmail@gmail.com" className="text-fg-app hover:text-brand-primary transition-colors mt-0.5">
-                  yourmail@gmail.com
+                <a href="mailto:gauranshkate.it@gmail.com" className="text-fg-app hover:text-brand-primary transition-colors mt-0.5">
+                  gauranshkate.it@gmail.com
                 </a>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] text-text-muted uppercase">Location</span>
-                <span className="text-fg-app mt-0.5">City, India</span>
+                <span className="text-fg-app mt-0.5">Pune, Maharashtra, India</span>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Contact() {
             <a href="https://github.com/kategauransh" target="_blank" rel="noreferrer" className="p-2 rounded-xl bg-bg-card border border-border-card text-text-muted hover:text-fg-app hover:border-brand-primary/20 transition-all">
               <Github size={16} />
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" className="p-2 rounded-xl bg-bg-card border border-border-card text-text-muted hover:text-fg-app hover:border-brand-primary/20 transition-all">
+            <a href="https://www.linkedin.com/in/gauranshkate26" target="_blank" rel="noreferrer" className="p-2 rounded-xl bg-bg-card border border-border-card text-text-muted hover:text-fg-app hover:border-brand-primary/20 transition-all">
               <Linkedin size={16} />
             </a>
           </div>

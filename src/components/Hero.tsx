@@ -65,7 +65,7 @@ export default function Hero() {
           <a href="https://github.com/kategauransh" target="_blank" rel="noreferrer" className="hover:text-fg-app transition-colors p-1" aria-label="GitHub">
             <Github size={18} />
           </a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" className="hover:text-fg-app transition-colors p-1" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/gauranshkate26" target="_blank" rel="noreferrer" className="hover:text-fg-app transition-colors p-1" aria-label="LinkedIn">
             <Linkedin size={18} />
           </a>
         </div>

@@ -14,8 +14,8 @@ export default function Projects() {
         "Integrated REST APIs and implemented loading, error, and state management workflows.",
         "Developed reusable UI components following modern frontend architecture best practices."
       ],
-      github: "https://github.com/kategauransh/insightboard", // wait, they can set it
-      live: "https://your-deployed-link.com",
+      github: "https://github.com/kategauransh/insightboard",
+      live: "https://kategauransh.github.io/insightboard/",
       icon: "📊"
     },
     {
@@ -39,7 +39,7 @@ export default function Projects() {
         "Deployed on Vercel with SEO-friendly structure and performance optimizations."
       ],
       github: "https://github.com/kategauransh/portfolio-v2",
-      live: "https://yourportfolio.com",
+      live: "https://kategauransh.github.io/portfolio-v2/",
       icon: "✨"
     },
     {
@@ -50,8 +50,8 @@ export default function Projects() {
         "Integrated JWT authentication APIs and session persistence.",
         "Implemented authorization-aware navigation and secure route handling."
       ],
-      github: "https://github.com/yourgithub/identityflow",
-      live: "https://your-deployed-link.com",
+      github: "https://github.com/kategauransh/identityflow",
+      live: "https://kategauransh.github.io/identityflow/",
       icon: "🔐"
     }
   ];
