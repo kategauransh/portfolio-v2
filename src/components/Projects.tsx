@@ -7,12 +7,48 @@ import { Github } from "@/components/SocialIcons";
 export default function Projects() {
   const projectsList = [
     {
-      title: "Reading – Xerox Printing & Delivery Platform",
+      title: "StoreFlow – E-Commerce Storefront Client",
+      tech: ["React.js", "Redux Toolkit", "Tailwind CSS", "Vite", "React Router"],
+      description: [
+        "Built a modern e-commerce storefront with catalog browsing, interactive cart states, and seamless checkout flows.",
+        "Implemented global state management with Redux Toolkit for consistent cart counts and user session tracking.",
+        "Created a premium responsive design using glassmorphic cards and micro-animations on interactive components."
+      ],
+      github: "https://github.com/kategauransh/storeflow",
+      live: "https://kategauransh.github.io/storeflow/",
+      icon: "🛍️"
+    },
+    {
+      title: "InsightBoard – Admin Metrics Dashboard",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Lucide Icons", "Static HTML Export"],
+      description: [
+        "Designed a high-end admin dashboard displaying mock financial statistics, task lists, and user metrics.",
+        "Utilized Next.js static exports and basePath settings for high-performance hosting on GitHub Pages.",
+        "Structured modular React components with robust hydration handling and responsive side-drawers."
+      ],
+      github: "https://github.com/kategauransh/insightboard",
+      live: "https://kategauransh.github.io/insightboard/",
+      icon: "📊"
+    },
+    {
+      title: "IdentityFlow – JWT Authentication Debugger",
+      tech: ["React.js", "TypeScript", "CSS Modules", "JWT Token Decoding", "Vite"],
+      description: [
+        "Developed a developer utility tool to simulate, inspect, decode, and debug JSON Web Tokens (JWT).",
+        "Implemented real-time client-side inputs validation and visual token signature verifying animations.",
+        "Designed a protected dashboard layout demonstrating path-guarding logic and decoded payloads visualizer panels."
+      ],
+      github: "https://github.com/kategauransh/identityflow",
+      live: "https://kategauransh.github.io/identityflow/",
+      icon: "🛡️"
+    },
+    {
+      title: "Xerox Printing & Delivery Platform",
       tech: ["Spring Boot", "MySQL", "JPA / Hibernate", "Docker", "PostgreSQL", "REST APIs"],
       description: [
-        "Built a document printing and delivery platform where users upload PDFs, configure print options, and place orders online.",
-        "Developed REST APIs for order management, pricing calculation, and document processing using Spring Boot and PostgreSQL.",
-        "Designed the backend using Controller–Service–Repository architecture and containerized the application with Docker."
+        "Built a document printing and delivery backend platform where users upload PDFs, configure options, and place orders.",
+        "Developed REST APIs for order management, pricing calculations, and document processing using Spring Boot and PostgreSQL.",
+        "Designed the database schemas using JPA/Hibernate relational mapping and containerized services using Docker."
       ],
       github: "https://github.com/kategauransh/Red_Ink",
       live: "",
@@ -22,9 +58,9 @@ export default function Projects() {
       title: "AI Transcriber – Speech-to-Text Platform",
       tech: ["Spring Boot", "Spring AI", "MySQL", "Swagger / OpenAPI", "REST APIs"],
       description: [
-        "Developed backend services for audio transcription workflows using Spring Boot and REST APIs.",
-        "Documented API contracts using Swagger/OpenAPI and implemented centralized exception handling.",
-        "Integrated backend workflows for transcript generation, retrieval, and structured response handling."
+        "Developed backend services for audio transcription workflows integrating Spring AI and speech-to-text models.",
+        "Documented REST API contracts using Swagger/OpenAPI and implemented centralized global exception handlers.",
+        "Integrated backend pipelines for transcript generation, storage, metadata retrieval, and structured JSON outputs."
       ],
       github: "https://github.com/kategauransh/Springboot-AI_powerded_Transcriber",
       live: "",
@@ -32,51 +68,15 @@ export default function Projects() {
     },
     {
       title: "JWT Authentication System",
-      tech: ["Spring Boot", "Spring Security", "JWT", "MySQL", "BCrypt", "Hibernate", "Spring Data JPA"],
+      tech: ["Spring Boot", "Spring Security", "JWT", "BCrypt", "MySQL", "Spring Data JPA"],
       description: [
-        "Implemented authentication and authorization using Spring Security, JWT, and BCrypt password encryption.",
-        "Secured protected REST endpoints with token validation and role-based access control.",
-        "Designed persistence using Hibernate and Spring Data JPA for user and role management."
+        "Implemented robust authentication and role-based authorization using Spring Security, JWT, and BCrypt encryption.",
+        "Secured protected REST endpoints with stateless token validations and custom security filters.",
+        "Designed relational persistence using Spring Data JPA for modular user and role management."
       ],
       github: "https://github.com/kategauransh/JWT-Authentication-System",
       live: "",
       icon: "🔐"
-    },
-    {
-      title: "E-Commerce Microservices Backend",
-      tech: ["Java", "Spring Boot", "Eureka Discovery", "RabbitMQ", "Zipkin", "Microservices"],
-      description: [
-        "Architected and developed scalable microservices (Product, Order, Payment) using Spring Boot.",
-        "Implemented service discovery with Eureka, load balancing, and distributed tracing with Zipkin.",
-        "Integrated RabbitMQ for asynchronous order processing and robust inter-service communication."
-      ],
-      github: "https://github.com/kategauransh/E-Commerce-Microservices",
-      live: "",
-      icon: "⚙️"
-    },
-    {
-      title: "Brew Beans -- Coffee Shop Landing Page",
-      tech: ["HTML", "CSS", "JavaScript", "Vercel"],
-      description: [
-        "Designed a beautiful, fully responsive website for a coffee shop client.",
-        "Implemented high-end CSS layouts, modern custom navigation menus, and animations.",
-        "Deployed live to Vercel for high performance and smooth page transitions."
-      ],
-      github: "https://github.com/kategauransh/Brew-Beans",
-      live: "https://brew-beans-hazel.vercel.app",
-      icon: "☕"
-    },
-    {
-      title: "Data Structures & Algorithms in Java",
-      tech: ["Java", "Algorithms", "Data Structures"],
-      description: [
-        "Coded standard data structures (trees, graphs, lists) and common algorithms in Java.",
-        "Optimized algorithmic runtime complexities using dynamic programming principles.",
-        "Built modular, reusable class structures to test sorting and traversal solutions."
-      ],
-      github: "https://github.com/kategauransh/DSA_codes",
-      live: "",
-      icon: "🧩"
     }
   ];
 

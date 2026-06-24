@@ -1,12 +1,23 @@
 "use client";
 
 import React, { useState } from "react";
-import { Laptop, Database, Globe, Lock, Wrench } from "lucide-react";
+import { Laptop, Database, Globe, Lock, Wrench, Layout } from "lucide-react";
 
 export default function Skills() {
-  const [activeCategory, setActiveCategory] = useState("backend");
+  const [activeCategory, setActiveCategory] = useState("frontend");
 
   const skillGroups = [
+    {
+      id: "frontend",
+      label: "Frontend Stack",
+      icon: Layout,
+      items: [
+        { name: "React.js & Next.js", level: 92 },
+        { name: "TypeScript", level: 90 },
+        { name: "Tailwind CSS / CSS Modules", level: 95 },
+        { name: "Redux Toolkit / State", level: 88 },
+      ]
+    },
     {
       id: "backend",
       label: "Spring Backend",

@@ -5,9 +5,9 @@ import { User, Award, ShieldCheck } from "lucide-react";
 
 export default function About() {
   const metrics = [
-    { value: "3+", label: "Flagship Backend Systems", icon: Award },
-    { value: "100%", label: "Layered API Architecture", icon: ShieldCheck },
-    { value: "Naresh i", label: "Certified Professional Training", icon: User },
+    { value: "4+", label: "Flagship Web Projects", icon: Award },
+    { value: "100%", label: "Full-Stack System Delivery", icon: ShieldCheck },
+    { value: "Naresh i", label: "Java Full Stack Training", icon: User },
   ];
 
   return (
@@ -24,13 +24,13 @@ export default function About() {
         {/* Left Column: Biography */}
         <div className="lg:col-span-7 space-y-4 text-left leading-relaxed text-sm md:text-base text-text-muted">
           <p>
-            I am a dedicated **Java Backend Developer** who loves designing and building robust, scalable server-side applications, secure document workflows, and structured REST APIs. My coding principles focus on Controller-Service-Repository layered architectures, exception handling, data validation, and clean database schema designs.
+            I am a dedicated **Java Full Stack Developer** who loves designing and building robust backend architectures alongside highly interactive, modern web frontends. My engineering philosophy revolves around clean API contracts, layered designs (Controller-Service-Repository), efficient state flow, and fully containerized microservice workflows.
           </p>
           <p>
-            During my intensive training at **Naresh i Technologies**, I gained deep experience scaffolding Spring Boot microservices, integrating Spring Security and JWT for role-based authorization, using Hibernate/JPA for relational persistence, and containerizing backends using Docker.
+            With formal training in **Java Full Stack Development** at **Naresh i Technologies**, I have extensive experience bootstrapping Spring Boot backend services, securing endpoints with Spring Security and JWT, using Hibernate/JPA for relational persistence, and containerizing runtimes using Docker.
           </p>
           <p>
-            When I build backend systems, I document API contracts clearly using OpenAPI/Swagger, write efficient JPA queries to avoid performance bottlenecks, use in-memory H2 databases for rapid integration testing, and containerize service environments for cloud compatibility.
+            On the frontend, I craft smooth user interfaces using **React, Next.js, and TypeScript**. I focus on responsive styles, client-side input validations, protected dashboards, and clean API integration. This allows me to deliver fully integrated, end-to-end web applications.
           </p>
         </div>
 

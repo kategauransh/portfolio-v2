@@ -5,7 +5,7 @@ import { ArrowRight, Terminal, Sparkles } from "lucide-react";
 import { Github, Linkedin } from "@/components/SocialIcons";
 
 export default function Hero() {
-  const keywords = ["Java", "Spring Boot", "Hibernate / JPA", "Spring Security", "MySQL", "Docker"];
+  const keywords = ["Java", "Spring Boot", "React.js", "Next.js", "TypeScript", "MySQL", "Docker"];
 
   return (
     <section className="py-16 md:py-24 max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[calc(100vh-4rem)] animate-slide-up">
@@ -20,13 +20,13 @@ export default function Hero() {
 
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-fg-app leading-tight">
-            Building Scalable <br className="hidden sm:inline" />
+            Building Full Stack <br className="hidden sm:inline" />
             <span className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent">
-              Backend Systems
+              Enterprise Apps
             </span>
           </h1>
           <p className="text-sm md:text-base text-text-muted max-w-lg leading-relaxed">
-            Hi, I&apos;m Gauransh, a Java Backend Developer focused on designing and building robust enterprise applications, high-performance REST APIs, secure document workflows, and structured databases using Spring Boot.
+            Hi, I&apos;m Gauransh, a Full Stack Developer specializing in building robust Spring Boot backends, scalable REST APIs, and high-performance frontend interfaces using React, Next.js, and TypeScript.
           </p>
         </div>
 
