@@ -71,7 +71,7 @@ export default function Hero() {
             </a>
             <div className="h-4 w-px bg-white/10"></div>
             <a
-              href="/Gauransh_Kate_Resume.pdf"
+              href="Gauransh_Kate_Resume.pdf"
               download="Gauransh_Kate_Resume.pdf"
               className="inline-flex items-center space-x-2 text-xs font-semibold hover:text-white transition-colors duration-200"
             >
