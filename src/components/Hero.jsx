@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Mail, Download } from 'lucide-react';
+import avatar from '../assets/avatar.jpg';
 
 export default function Hero() {
   return (
@@ -94,11 +95,11 @@ export default function Hero() {
             {/* Main Avatar Container */}
             <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl glass-card flex items-center justify-center p-2 bg-dark-card/45">
               <img
-                src="/src/assets/avatar.jpg"
+                src={avatar}
                 alt="Gauransh Kate Avatar"
                 className="w-full h-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
                 onError={(e) => {
-                  e.target.src = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3';
+                  e.target.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3';
                 }}
               />
             </div>
