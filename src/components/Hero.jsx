@@ -94,7 +94,7 @@ export default function Hero() {
             {/* Main Avatar Container */}
             <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl glass-card flex items-center justify-center p-2 bg-dark-card/45">
               <img
-                src="/src/assets/avatar.png"
+                src="/src/assets/avatar.jpg"
                 alt="Gauransh Kate Avatar"
                 className="w-full h-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
                 onError={(e) => {
