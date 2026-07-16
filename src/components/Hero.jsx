@@ -26,13 +26,13 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-gradient">
-            Java Backend <br />
+            Java Full Stack <br />
             Developer <br />
             <span className="text-gradient-primary">Building Scalable Systems.</span>
           </h1>
 
           <p className="text-base md:text-lg text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Hi, I'm <strong className="text-white font-semibold">Gauransh Kate</strong>. I specialize in building distributed, concurrency-safe backend systems with Spring Boot, Hibernate, MySQL, and event-driven architectures with Apache Kafka.
+            Hi, I'm <strong className="text-white font-semibold">Gauransh Kate</strong>. I specialize in building distributed, concurrency-safe backend architectures and responsive frontends using Spring Boot, Hibernate, MySQL, Kafka, and React JS.
           </p>
 
           {/* Call to Actions */}

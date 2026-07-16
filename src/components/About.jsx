@@ -55,7 +55,7 @@ export default function About() {
               Who I Am
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              I am a results-oriented Java Backend Developer with a strong emphasis on building distributed and concurrency-safe applications. I have experience designing shared-database multi-tenant B2B architectures, securing endpoints with custom JWT filters, and building event notification pipelines with Apache Kafka.
+              I am a results-oriented Java Full Stack Developer with a strong emphasis on building distributed and concurrency-safe applications. I have experience designing shared-database multi-tenant B2B architectures, securing endpoints with custom JWT filters, and building event notification pipelines with Apache Kafka.
             </p>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               I focus deeply on system correctness under high concurrent loads, applying concurrency safeguards like optimistic and pessimistic locks, managing transactional state, and optimizing index definitions on relational databases like MySQL.
@@ -100,8 +100,8 @@ export default function About() {
             <div className="glass-card p-6 rounded-2xl flex flex-col justify-between h-40 border border-white/5 relative group hover:border-purple-400/20 transition-all duration-300">
               <span className="text-4xl font-extrabold text-white text-gradient-primary">100%</span>
               <div>
-                <p className="text-sm font-bold text-white">Backend Focus</p>
-                <p className="text-xs text-gray-500">Java & Spring Boot specialist</p>
+                <p className="text-sm font-bold text-white">Full Stack Focus</p>
+                <p className="text-xs text-gray-500">Java, Spring Boot & React</p>
               </div>
             </div>
             <div className="glass-card p-6 rounded-2xl flex flex-col justify-between h-40 border border-white/5 relative group hover:border-emerald-400/20 transition-all duration-300">

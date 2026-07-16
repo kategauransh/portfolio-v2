@@ -1,5 +1,4 @@
-import React from 'react';
-import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, ArrowUpRight } from 'lucide-react';
 
 export default function Timeline() {
   const experiences = [
@@ -12,6 +11,13 @@ export default function Timeline() {
   ];
 
   const education = [
+    {
+      degree: 'Advanced Software Engineering Job Simulation',
+      institution: 'Walmart Global Tech (Forage)',
+      period: '2026',
+      description: 'Completed practical tasks verifying competencies in Advanced Data Structures, Software Architecture, Relational Database Design, and Data Munging.',
+      link: 'Walmart_Global_Tech_Certificate.pdf'
+    },
     {
       degree: 'Bachelor of Engineering in IT',
       institution: 'Smt. Kashibai Navale College of Engineering, Pune',
@@ -109,6 +115,19 @@ export default function Timeline() {
                     <p className="text-sm text-gray-400 leading-relaxed">
                       {edu.description}
                     </p>
+                    {edu.link && (
+                      <div className="pt-2">
+                        <a
+                          href={edu.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 transition-colors font-medium border border-cyan-400/20 bg-cyan-400/5 px-3 py-1.5 rounded-lg"
+                        >
+                          <span>View Certificate</span>
+                          <ArrowUpRight className="h-3 w-3" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
