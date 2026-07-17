@@ -23,6 +23,18 @@ export default function Timeline() {
       institution: 'Smt. Kashibai Navale College of Engineering, Pune',
       period: '2021 - 2025',
       description: 'Academic studies focusing on Software Engineering, Database Systems, Computer Networks, and Information Technology.',
+    },
+    {
+      degree: 'Higher Secondary (Class XII), Science',
+      institution: "St. Xavier's International School",
+      period: '2020',
+      description: 'Score: 76% | Focused studies in Physics, Chemistry, and Mathematics.',
+    },
+    {
+      degree: 'Secondary School (Class X)',
+      institution: "St. Xavier's International School",
+      period: '2018',
+      description: 'Score: 64% | General academic secondary school curriculum.',
     }
   ];
 

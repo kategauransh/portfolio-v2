@@ -105,10 +105,10 @@ export default function About() {
               </div>
             </div>
             <div className="glass-card p-6 rounded-2xl flex flex-col justify-between h-40 border border-white/5 relative group hover:border-emerald-400/20 transition-all duration-300">
-              <span className="text-4xl font-extrabold text-white text-gradient-primary">50k+</span>
+              <span className="text-4xl font-extrabold text-white text-gradient-primary">93%</span>
               <div>
-                <p className="text-sm font-bold text-white">Lines of Code</p>
-                <p className="text-xs text-gray-500">Clean CSR design pattern</p>
+                <p className="text-sm font-bold text-white">MHT-CET Score</p>
+                <p className="text-xs text-gray-500">Academic Entrance Achievement</p>
               </div>
             </div>
           </div>
