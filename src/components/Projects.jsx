@@ -5,126 +5,58 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filters = ['All', 'Distributed Systems', 'SaaS Backends', 'Event-Driven & AI', 'Frontend'];
+  const filters = ['All', 'Collaborative Full-Stack', 'Interactive AI', 'Visual Craft & Performance'];
 
   const projects = [
     {
       id: 1,
-      title: 'High-Throughput Ledger & Wallet System',
-      category: 'Distributed Systems',
-      description: 'A distributed wallet and ledger system using optimistic locking on balance records to guarantee atomic updates under heavy concurrent access.',
-      detailedDescription: 'This wallet and ledger system was engineered using Spring Boot, JPA, and MySQL. It uses optimistic locking (JPA @Version) on wallet balances to guarantee atomic updates under high concurrent loads, favoring throughput over pessimistic locks for read-heavy operations. The system models an immutable financial ledger (Wallet, Transaction, LedgerEntry, TransactionAudit) to separate mutable balance states from an append-only audit trail. It has been validated with 40-50 simultaneous debit requests against shared wallets across 1,000+ wallets and 20,000+ transaction records, confirming zero balance drift.',
+      title: 'Real-Time Collaborative Project Management Board',
+      category: 'Collaborative Full-Stack',
+      description: 'A real-time, distributed team board featuring live task sync, multi-user concurrency conflict resolution, and fluid drag-and-drop mechanics.',
+      detailedDescription: 'Built as a Linear/Trello alternative using Spring Boot, JPA, PostgreSQL, and React. It utilizes Spring WebSockets with STOMP protocol to establish a persistent bi-directional channel, broadcasting task changes to all connected users instantly. Concurrency conflicts are mitigated using client-side optimistic UI updates that dynamically rollback to the server-confirmed state on network failures. Incorporates JWT authentication with refresh token lifecycle handling, protecting REST routes while ensuring secure task and board tenant-isolation boundaries.',
       image: '/src/assets/project1.png',
-      tags: ['Spring Boot', 'MySQL', 'JPA', 'Hibernate', 'Optimistic Locking', 'Concurrency'],
+      tags: ['Spring Boot', 'WebSockets', 'STOMP', 'React JS', 'TypeScript', '@dnd-kit', 'Optimistic UI', 'PostgreSQL', 'JWT Auth'],
       demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/distributed-wallet-ledger',
+      githubLink: 'https://github.com/kategauransh/collaborative-kanban-board',
       features: [
-        'JPA @Version optimistic locking to secure concurrent wallet balance modifications',
-        'Immutable ledger audit trail (Wallet, Transaction, LedgerEntry, TransactionAudit)',
-        'Validated safety across 20,000+ transaction records with zero balance drift',
-        'Automatic conflict-retry block handling concurrency debit spikes'
+        'Persistent WebSocket STOMP channel synchronizing task updates in real-time',
+        'Optimistic UI state updates using @dnd-kit with auto-rollback on server rejection',
+        'Spring Security JWT Auth integration with refresh token rotating cycles',
+        'Secure multi-tenant workspace separation protecting client boards'
       ]
     },
     {
       id: 2,
-      title: 'Scalable Multi-Tenant B2B SaaS Backend',
-      category: 'SaaS Backends',
-      description: 'A shared-database, multi-tenant B2B SaaS backend implementing automated JWT repository-level filtering and thread-level context isolation.',
-      detailedDescription: 'A scalable B2B SaaS backend built using Spring Boot, Spring Security, and MySQL. It uses a shared-database, multi-tenant discriminator pattern (tenant_id) to eliminate per-tenant schema provisioning. A custom JWT filter extracts the tenant context from authentication tokens and propagates it via ThreadLocal, enabling automatic repository-level filtering without requiring manual query edits. Delivered core SaaS modules including Users, Roles, Customers, Projects, Tasks, and Invoices, ensuring complete tenant isolation verified by integration testing across 10 tenant organizations, 100+ users, and 3,000+ tasks.',
+      title: 'AI-Powered Streaming Resume Builder',
+      category: 'Interactive AI',
+      description: 'A token-by-token AI CV configurator with streaming response rendering, AbortController cancellation, and prompt caching.',
+      detailedDescription: 'Developed using Vite, React, and TypeScript. To create a seamless, non-blocking interface, this application implements token-by-token streaming LLM rendering. It incorporates a custom partial JSON parser that balances unclosed brackets and double-quotes in real-time, allowing live resume rendering during active network streams. Features abort controls using AbortController, client-side caching of generated profiles in localStorage (reducing LLM costs by $0.02 per query), and exponential backoff retry banners for rate-limit exceptions (HTTP 429).',
       image: '/src/assets/project2.png',
-      tags: ['Spring Boot', 'Spring Security', 'MySQL', 'JWT', 'ThreadLocal', 'Multi-Tenancy'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/multi-tenant-saas-backend',
+      tags: ['React JS', 'TypeScript', 'Streaming SSE', 'AbortController', 'Partial JSON Parser', 'Query Caching', 'UX Design', 'Vite'],
+      demoLink: 'https://kategauransh.github.io/Portfolio-builder/',
+      githubLink: 'https://github.com/kategauransh/Portfolio-builder',
       features: [
-        'Shared-database multi-tenant structure using tenant_id discriminator',
-        'ThreadLocal-driven tenant context propagation via custom Spring Security filter',
-        'Automated repository-level query tenant isolation filtering',
-        'Verified security across 10 organizations, 100+ users, and 3,000+ tasks'
+        'Token-by-token text-stream generator simulating OpenAI completions in real-time',
+        'Custom structural partial JSON parser rendering incomplete data blocks',
+        'Active AbortController cancellation signal immediately terminating streams',
+        'LocalStorage query hash cache reducing API token usage for duplicate prompts'
       ]
     },
     {
       id: 3,
-      title: 'E-Commerce Microservices Engine',
-      category: 'Distributed Systems',
-      description: 'Architected and developed scalable microservices (Product, Order, and Payment services) using Spring Boot, Spring Cloud, and service discovery.',
-      detailedDescription: 'A scalable, enterprise-ready microservices architecture built using Spring Boot, Spring Cloud, and MySQL. It divides system capabilities into independent microservice modules: Product, Order, and Payment. It utilizes Eureka for discovery, Spring Cloud Gateway for routing, Zipkin for request tracing, and Apache Kafka for asynchronous communication.',
+      title: 'High-Performance Data-Heavy Dashboard',
+      category: 'Visual Craft & Performance',
+      description: 'An interactive analytical dashboard rendering 10,000+ data points cleanly via scroll virtualization and charting optimizations.',
+      detailedDescription: 'An enterprise-ready analytical dashboard built using Next.js, React 19, and TypeScript. Engineered to handle large datasets, it features a transaction log table virtualized natively with zero external dependencies, rendering only the visible viewport rows (10,000+ total rows). It integrates lazy-loaded Recharts libraries (using Next.js dynamic routing with ssr: false), saving initial bundle weight, wrapped with React.memo to prevent dashboard layout shift. Supports a gorgeous custom HSL dark mode style configuration.',
       image: '/src/assets/project3.png',
-      tags: ['Spring Boot', 'Spring Cloud', 'MySQL', 'Eureka', 'Zipkin', 'Microservices'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/E-Commerce-Microservices',
+      tags: ['Next.js', 'React 19', 'TypeScript', 'Recharts', 'List Virtualization', 'React.memo', 'Dark Mode', 'Code-Splitting'],
+      demoLink: 'https://kategauransh.github.io/insightboard/',
+      githubLink: 'https://github.com/kategauransh/insightboard',
       features: [
-        'Decoupled microservice layers (Product, Order, and Payment) running independently',
-        'Eureka service registry facilitating automated client-side load balancing',
-        'Centralized Routing and security filters via Spring Cloud Gateway',
-        'Distributed tracing using Zipkin to monitor query flow across modules'
-      ]
-    },
-    {
-      id: 4,
-      title: 'Spring Boot AI Audio Transcriber',
-      category: 'Event-Driven & AI',
-      description: 'An AI-powered speech-to-text service utilizing Spring AI for backend transcription processing and React JS frontend.',
-      detailedDescription: 'Spring Boot AI Audio Transcriber utilizes local AI pipelines and cloud integrations to provide fast audio transcripts. Users upload audio files which are processed using Spring AI Whisper APIs and formatted into speak-labeled scripts with short summarized highlights.',
-      image: '/src/assets/project4.png',
-      tags: ['Spring Boot', 'React JS', 'Spring AI', 'OpenAI Whisper', 'Tailwind CSS', 'Docker'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/Springboot-AI_powerded_Transcriber',
-      features: [
-        'Spring AI Whisper framework integration for backend transcription audio engines',
-        'Intuitive React JS client frontend interface displaying speaker tags',
-        'Centralized exception handlers processing varied audio mime formats',
-        'Docker containerization setup for deployment replication'
-      ]
-    },
-    {
-      id: 5,
-      title: 'RedInk — Document Printing & Delivery',
-      category: 'SaaS Backends',
-      description: 'A production-ready Spring Boot backend for user authentication, Razorpay payments, and AWS S3 secure file storage.',
-      detailedDescription: 'RedInk is a robust document printing and delivery engine built using Spring Boot, MySQL, and Docker. It features an Intelligent Pricing Engine that dynamically calculates checkout amounts based on document parameters (color, double-sided, binding, copies). It integrates secure cloud document storage with AWS S3, securing user sessions and role permissions with Spring Security. Built around a Controller-Service-Repository layout, it separates order routing from price computations and integrates Razorpay for secure payment gateway processing.',
-      image: '/src/assets/project5.png',
-      tags: ['Spring Boot', 'MySQL', 'AWS S3', 'Razorpay', 'Spring Security', 'Docker'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/Red_Ink',
-      features: [
-        'Intelligent Pricing Engine calculating costs on print-options dynamically',
-        'Secure Cloud Storage bucket integration with AWS S3 for documents',
-        'Seamless integration with Razorpay Payment SDK for checkout processing',
-        'Robust role-based authorization rules using Spring Security'
-      ]
-    },
-    {
-      id: 6,
-      title: 'Bean Brew Coffee Shop Website',
-      category: 'Frontend',
-      description: 'A modern, responsive coffee shop website featuring clean HTML/CSS visual aesthetics, UX consistency, and Vercel hosting.',
-      detailedDescription: 'Bean Brew is a modern frontend coffee shop landing page built using clean, structured HTML, CSS, and lightweight JavaScript. The project focuses heavily on responsive design aesthetics that scale across mobile, tablet, and desktop screens, establishing consistent UX hierarchies, fast load times, and automated Vercel hosting integrations.',
-      image: '/src/assets/project6.png',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Vercel hosting', 'UX Design'],
-      demoLink: 'https://brew-beans-hazel.vercel.app/',
-      githubLink: 'https://github.com/kategauransh/Brew-Beans',
-      features: [
-        'Responsive layout scaling layouts smoothly from mobile to desktop sizes',
-        'Consistent and modern color palette designed for visual warmth and contrast',
-        'Fast page load times with optimized asset sizes and clean stylesheets',
-        'Continuous integration deployment pipelines hosted on Vercel'
-      ]
-    },
-    {
-      id: 7,
-      title: 'Real-Time Event-Driven Notification System',
-      category: 'Event-Driven & AI',
-      description: 'An event-driven notification engine built on Apache Kafka, featuring dead letter queues and exponential-backoff retries.',
-      detailedDescription: 'An event-driven notification engine built using Spring Boot, Apache Kafka, and Docker. It decouples event producers from consumer microservices across 5 different topics (for Email, SMS, In-App, and WebSockets), enabling independent channel scaling. The system implements an exponential-backoff retry mechanism with Dead Letter Topic (DLT) routing for delivery failures, tagging events with unique correlation IDs for end-to-end trace tracking. It sustains a throughput of 250-300 events/sec at 70-120ms average end-to-end latency across 15,000+ test events.',
-      image: '/src/assets/project7.png',
-      tags: ['Spring Boot', 'Apache Kafka', 'Docker', 'Event-Driven', 'Dead Letter Topic', 'Kafka Metrics'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/event-driven-notification-system',
-      features: [
-        'Decoupled multi-channel notification consumers across 5 Kafka topics',
-        'Exponential backoff retries with Dead Letter Topic routing fallback',
-        'Correlation IDs tagging to ensure complete end-to-end event traceability',
-        'Sustained 250-300 events/sec throughput with low end-to-end latency (70-120ms)'
+        'Zero-dependency list virtualization table scrolling 10,000+ items smoothly',
+        'Dynamic code-splitting dynamic() imports lazy-loading heavy charting packages',
+        'Performance memoization optimizations blocking layout re-renders on page changes',
+        'Refined dark mode color palette using custom design system tokens'
       ]
     }
   ];
