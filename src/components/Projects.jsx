@@ -13,126 +13,58 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filters = ['All', 'Distributed Systems', 'SaaS & Database', 'Full Stack & AI'];
+  const filters = ['All', 'Collaborative Full-Stack', 'Interactive AI', 'Visual Craft & Performance'];
 
   const projects = [
     {
       id: 1,
-      title: 'High-Throughput Distributed Ledger & Wallet System',
-      category: 'Distributed Systems',
-      description: 'An atomic, concurrency-safe balance ledger engine designed to process simultaneous debit requests with optimistic concurrency verification.',
-      detailedDescription: 'Built with Spring Boot, MySQL, and JPA. Features concurrency-safe wallet balance processing using JPA @Version checks to prevent balance drift under heavy concurrent loads. Models a secure, immutable ledger separating mutable values from audit transactional logs, allowing clean financial traceability.',
+      title: 'Real-Time Collaborative Project Management Board',
+      category: 'Collaborative Full-Stack',
+      description: 'A real-time, distributed team board featuring live task sync, multi-user concurrency conflict resolution, and fluid drag-and-drop mechanics.',
+      detailedDescription: 'Built as a Linear/Trello alternative using Spring Boot, JPA, PostgreSQL, and React. It utilizes Spring WebSockets with STOMP protocol to establish a persistent bi-directional channel, broadcasting task changes to all connected users instantly. Concurrency conflicts are mitigated using client-side optimistic UI updates that dynamically rollback to the server-confirmed state on network failures. Incorporates JWT authentication with refresh token lifecycle handling, protecting REST routes while ensuring secure task and board tenant-isolation boundaries.',
       image: project1,
-      tags: ['Spring Boot', 'MySQL', 'JPA', 'Optimistic Locking', 'Concurrency Control', 'REST APIs'],
+      tags: ['Spring Boot', 'WebSockets', 'STOMP', 'React JS', 'TypeScript', '@dnd-kit', 'Optimistic UI', 'PostgreSQL', 'JWT Auth'],
       demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/distributed-wallet-ledger',
+      githubLink: 'https://github.com/kategauransh/collaborative-kanban-board',
       features: [
-        'Optimistic concurrency checks with JPA @Version preventing transaction collision',
-        'Immutable financial ledger separating mutable wallet balances from audit trails',
-        'Validated trace safety under 50 simultaneous debit requests with automatic retries',
-        'Clean Controller-Service-Repository boundaries protecting transactional states'
+        'Persistent WebSocket STOMP channel synchronizing task updates in real-time',
+        'Optimistic UI state updates using @dnd-kit with auto-rollback on server rejection',
+        'Spring Security JWT Auth integration with refresh token rotating cycles',
+        'Secure multi-tenant workspace separation protecting client boards'
       ]
     },
     {
       id: 2,
-      title: 'Scalable Multi-Tenant B2B SaaS Backend',
-      category: 'SaaS & Database',
-      description: 'A dynamic database-level multi-tenant isolation backend utilizing servlet filters and context ThreadLocal mappings.',
-      detailedDescription: 'Developed using Spring Boot, Spring Security, and MySQL. Features dynamic servlet filter token decryption to retrieve tenant IDs from JWTs and map them to ThreadLocal context parameters, automatically injecting database-level tenant isolation filters via Hibernate.',
+      title: 'AI-Powered Streaming Resume Builder',
+      category: 'Interactive AI',
+      description: 'A token-by-token AI CV configurator with streaming response rendering, AbortController cancellation, and prompt caching.',
+      detailedDescription: 'Developed using Vite, React, and TypeScript. To create a seamless, non-blocking interface, this application implements token-by-token streaming LLM rendering. It incorporates a custom partial JSON parser that balances unclosed brackets and double-quotes in real-time, allowing live resume rendering during active network streams. Features abort controls using AbortController, client-side caching of generated profiles in localStorage (reducing LLM costs by $0.02 per query), and exponential backoff retry banners for rate-limit exceptions (HTTP 429).',
       image: project2,
-      tags: ['Spring Boot', 'Spring Security', 'ThreadLocal', 'Hibernate Filters', 'MySQL', 'JWT Authentication'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/multi-tenant-saas-backend',
+      tags: ['React JS', 'TypeScript', 'Streaming SSE', 'AbortController', 'Partial JSON Parser', 'Query Caching', 'UX Design', 'Vite'],
+      demoLink: 'https://kategauransh.github.io/Portfolio-builder/',
+      githubLink: 'https://github.com/kategauransh/Portfolio-builder',
       features: [
-        'Dynamic ThreadLocal tenant context propagation for automated isolation',
-        'Custom JWT authorization filters extracting organizational context',
-        'Hibernate database-level dynamic SQL filters preventing cross-tenant leakage',
-        'Tested multi-tenant separation across 10 virtual organization scopes'
+        'Token-by-token text-stream generator simulating OpenAI completions in real-time',
+        'Custom structural partial JSON parser rendering incomplete data blocks',
+        'Active AbortController cancellation signal immediately terminating streams',
+        'LocalStorage query hash cache reducing API token usage for duplicate prompts'
       ]
     },
     {
       id: 3,
-      title: 'Real-Time Event-Driven Notification System',
-      category: 'Distributed Systems',
-      description: 'An asynchronous notification alerting engine built on Apache Kafka, featuring dead letter topic routing.',
-      detailedDescription: 'Engineered a backend alerting pipeline on Apache Kafka, separating incoming REST request producers from async WebSocket, email, and SMS consumers. Configured exponential backoff retry parameters with Dead Letter Topic (DLT) routing and correlation tracking for complete traceability.',
+      title: 'High-Performance Data-Heavy Dashboard',
+      category: 'Visual Craft & Performance',
+      description: 'An interactive analytical dashboard rendering 10,000+ data points cleanly via scroll virtualization and charting optimizations.',
+      detailedDescription: 'An enterprise-ready analytical dashboard built using Next.js, React 19, and TypeScript. Engineered to handle large datasets, it features a transaction log table virtualized natively with zero external dependencies, rendering only the visible viewport rows (10,000+ total rows). It integrates lazy-loaded Recharts libraries (using Next.js dynamic routing with ssr: false), saving initial bundle weight, wrapped with React.memo to prevent dashboard layout shift. Supports a gorgeous custom HSL dark mode style configuration.',
       image: project3,
-      tags: ['Spring Boot', 'Apache Kafka', 'Docker', 'DLQ Routing', 'Event-Driven', 'Traceability'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/event-driven-notification-system',
+      tags: ['Next.js', 'React 19', 'TypeScript', 'Recharts', 'List Virtualization', 'React.memo', 'Dark Mode', 'Code-Splitting'],
+      demoLink: 'https://kategauransh.github.io/insightboard/',
+      githubLink: 'https://github.com/kategauransh/insightboard',
       features: [
-        'Decoupled alerting consumers across 5 independent Kafka topics',
-        'Exponential backoff retries with automatic Dead Letter Topic (DLT) fallback routing',
-        'Injects end-to-end Correlation IDs in event headers for distributed tracking',
-        'Sustained 250-300 events/sec throughput with low end-to-end latencies'
-      ]
-    },
-    {
-      id: 4,
-      title: 'E-Commerce Microservices Engine',
-      category: 'Distributed Systems',
-      description: 'Decoupled microservice layers (Product, Order, Payment) coordinated via Netflix Eureka registry.',
-      detailedDescription: 'Designed microservices registered and discovered through Eureka. Integrates Spring Cloud Gateway routing rules, Zipkin trace logging, and custom resilience timeouts.',
-      image: project4,
-      tags: ['Spring Boot', 'Spring Cloud Eureka', 'Zipkin Tracing', 'Microservices', 'Load Balancing'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/E-Commerce-Microservices',
-      features: [
-        'Decoupled microservice architecture routing via Spring Cloud Gateway',
-        'Service discovery and load balancing via Netflix Eureka Registry',
-        'Distributed tracing and diagnostic logging using Zipkin integration',
-        'Resilient timeout parameters preventing cascading backend delays'
-      ]
-    },
-    {
-      id: 5,
-      title: 'Spring Boot AI Audio Transcriber',
-      category: 'Full Stack & AI',
-      description: 'Speech-to-text transcription engine utilizing Spring AI and OpenAI Whisper API.',
-      detailedDescription: 'An AI-powered application built with Spring Boot, Spring AI, and React. Integrates OpenAI Whisper API to process audio files and stream transcription results, mapped to a responsive web dashboard with speaker tag parameters.',
-      image: project5,
-      tags: ['Spring Boot', 'Spring AI', 'OpenAI Whisper', 'React JS', 'Audio Streams'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/Springboot-AI_powerded_Transcriber',
-      features: [
-        'Spring AI integration communicating with remote OpenAI Whisper libraries',
-        'Asynchronous multi-file audio upload handling and binary streams',
-        'Responsive frontend React dashboard displaying streaming transcript outputs',
-        'Robust file validation and centralized error exception handling'
-      ]
-    },
-    {
-      id: 6,
-      title: 'RedInk — Document Printing & Delivery',
-      category: 'SaaS & Database',
-      description: 'Print-on-demand e-commerce platform integrating AWS S3 storage and Razorpay checkout.',
-      detailedDescription: 'Built with Spring Boot, AWS S3, Razorpay, and Spring Security. Manages customizable print preferences, secure document storage in AWS S3 buckets, Razorpay API transaction validations, and multi-state delivery tracking.',
-      image: project6,
-      tags: ['Spring Boot', 'AWS S3', 'Razorpay API', 'Spring Security', 'MySQL', 'File Uploads'],
-      demoLink: '#',
-      githubLink: 'https://github.com/kategauransh/Red_Ink',
-      features: [
-        'Secure document storage in AWS S3 buckets with time-limited access',
-        'Razorpay API transaction gateway integration with payment verification',
-        'Print configuration wizard managing double-sided, color, and layout options',
-        'Spring Security role-based access separating client and admin tracking'
-      ]
-    },
-    {
-      id: 7,
-      title: 'Bean Brew Coffee Shop Website',
-      category: 'Full Stack & AI',
-      description: 'Modern, highly interactive responsive coffee shop landing page deployed on Vercel.',
-      detailedDescription: 'A gorgeous, visually optimized coffee shop landing page featuring custom menus, interactive cart flows, and smooth animations. Built with HTML, CSS, and JS, and hosted live on Vercel.',
-      image: project7,
-      tags: ['HTML5', 'Vanilla CSS', 'JavaScript', 'Vercel Deploy', 'Responsive UI'],
-      demoLink: 'https://brew-beans-hazel.vercel.app/',
-      githubLink: 'https://github.com/kategauransh/Brew-Beans',
-      features: [
-        'Modern responsive typography and layout using custom CSS variables',
-        'Interactive menu shopping cart and dynamic cost calculations',
-        'Polished micro-animations for high-end hover effects and transitions',
-        'Deployed live for public preview at brew-beans-hazel.vercel.app'
+        'Zero-dependency list virtualization table scrolling 10,000+ items smoothly',
+        'Dynamic code-splitting dynamic() imports lazy-loading heavy charting packages',
+        'Performance memoization optimizations blocking layout re-renders on page changes',
+        'Refined dark mode color palette using custom design system tokens'
       ]
     }
   ];
